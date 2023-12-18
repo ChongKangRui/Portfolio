@@ -1,5 +1,14 @@
-# Object file
-*.o
+# Generated files by hugo
+/public/
+/themes/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
-# Ada Library Information
-*.ali
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
