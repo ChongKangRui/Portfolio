@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cp-dev on ChongPortfolio</title>
+    <link>https://example.com/categories/cp-dev/</link>
+    <description>Recent content in cp-dev on ChongPortfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 19 Jun 2020 23:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/categories/cp-dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chiyo</title>
+      <link>https://example.com/portfolio/cp_chiyo/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/cp_chiyo/</guid>
+      <description>Gameplay Screenshots My Contribution &amp;amp; Challenging 1. Interaction system I am one of the people who contributed to designing the basic interaction system when we needed to create it from scratch. The interaction system that I contributed included how players interact with the interactable object, zoom in on the interactable object and even place items on those interactable objects. The purpose of this system is to simplify everything and make the system easy to use and understand by other programmers.</description>
+    </item>
+    <item>
+      <title>NDA Project</title>
+      <link>https://example.com/portfolio/cp_ndcproject/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/cp_ndcproject/</guid>
+      <description>Gameplay Screenshots My Contribution &amp;amp; Challenging My contribution to this project was mainly the AI. I created two AI and some gameplay features.
+1. AI with a simple attack style The first AI was an uncomplicated AI with simple attack behaviour. However, considering the network replication system to synchronize sfx, animation and correct behaviour state, it can add some challenges to this AI creation.
+2. AI with 6 different weapon and complex behavior The second AI was a complex AI with a variety of behaviours.</description>
+    </item>
+  </channel>
+</rss>

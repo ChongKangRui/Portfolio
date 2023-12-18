@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-gb"><head>
+  <meta charset="utf-8">
+  <title>ChongPortfolio</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" property="og:description" content="A second-year project that we completed over a three-month period.">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="Chong Kang Rui">
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="portfolio">
+    <div class="wrapper"><div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/"> Home
+                        </a></li>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li><a style="font-size: 18px; text-transform: none" href="/about">About</a></li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="uk-active"><a style="font-size: 18px; text-transform:none"
+                        href="/portfolio">Portfolio</a></li>
+                
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+            <li><a style="font-size: 18px" href="https://example.com"> Home </a></li>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a style="font-size: 18px" href="/about">About</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="uk-active"><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Student Project: MindWar</h1>
+    <p class="uk-text-center uk-text-lead">A second-year project that we completed over a three-month period.</p>
+    <p class="uk-text-center uk-text-lead">9 Persons Group Project</p>
+    
+    
+    
+
+    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
+      
+
+    
+
+    
+    
+      <div> 
+        <a class="uk-button uk-button-default" href="https://uowmgames.itch.io/mind-wars"> <img loading="lazy" src="https://camo.githubusercontent.com/508009245f9c67ffe95806d79e6ddc0ed437ff92095ae52fe23101da0c1778fa/687474703a2f2f7374617469632e74756d626c722e636f6d2f39636565383438316165633066623531396437346432303961626462313735302f37637635617a6b2f684a486d76763170382f74756d626c725f7374617469635f69746368696f2d626c61636b2e706e67" style="height: 2em;
+          width: 6em;" alt="Creative Commons">
+  
+          
+        </a>
+      </div>
+    
+    
+
+    
+
+
+    
+    </div>
+
+    
+
+    <hr class="full-width">
+    
+    
+    <h2 class="uk-text-center uk-heading-small">Built with</h2>
+
+    <section >
+      <div class="uk-container">
+
+        <div class="uk-child-width-1-6@l uk-child-width-1-3@m uk-child-width-1-3@s uk-child-width-1-2 uk-text-center uk-flex-center"
+             uk-grid>
+          
+          <div class="imagemargin">
+            <a href="https://unity.com/">
+            <img class="contain skills" src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" alt="Hugo" loading="lazy" style="cursor: pointer">
+            </a>
+          </div>
+          
+          <div class="imagemargin">
+            <a href="https://unity.com/how-to/learning-c-sharp-unity-beginners">
+            <img class="contain skills" src="https://www.cdnlogo.com/logos/c/27/c.svg" alt="" loading="lazy" style="cursor: pointer">
+            </a>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="full-width">
+    
+    
+
+    <div class="content">
+      <h2 id="gameplay-screenshots">Gameplay Screenshots</h2>
+<p>
+
+
+  
+  
+
+
+<div class="image-container" style="display: flex;">
+    <img src="/GPS2/mindwar01.png" alt="Image 1" width="550" height="550">
+    <img src="/GPS2/mindwar02.png" alt="Image 2" width="550" height="550">
+</div>
+
+
+
+  
+  
+
+
+<div class="image-container" style="display: flex;">
+    <img src="/GPS2/mindwar03.png" alt="Image 1" width="550" height="550">
+    <img src="/GPS2/mindwar04.png" alt="Image 2" width="550" height="550">
+</div></p>
+<h2 id="trailer">Trailer</h2>
+
+<div class="video-container"><style>body {text-align: center;}</style>
+    <iframe width="850" height="450" src="https://www.youtube.com/embed/q6HVDigSZ48" frameborder="0" allowfullscreen></iframe>
+
+</div>
+
+
+
+<h2 id="game-description">Game Description</h2>
+
+
+<div style="text-align: left;">
+    <p>Developed by StopFeeding Studios, Mind Wars is a strategy/auto-battler mobile game that takes major inspirations from auto-chess titles such as Teamfight Tactics and Dota Underlords.Set in the near-future, Players assume the role of the eponymous profession, healing illnesses both mental and physical by vanquishing evil viruses with their army of nanobots.</p>
+    <p><br></p>
+</div>
+<h2 id="my-contribution">My Contribution</h2>
+<h3 id="1-hexagon-generator">1. Hexagon Generator</h3>
+<p><img src="/GPS2/HexGenerator.png" alt=""></p>
+<h3 id="2-spell-cards-and-shop-system">2. Spell Cards and Shop System</h3>
+<p><img src="/GPS2/T_S_SC.gif" alt=""></p>
+<h3 id="3-main-menu-camera-systemdraggable-camera">3. Main Menu Camera System(Draggable Camera)</h3>
+<p><img src="/GPS2/CameraSystem.gif" alt=""></p>
+<h3 id="4-perks-and-upgrades">4. Perks and Upgrades.</h3>
+<p><img src="/GPS2/PerkSystem.gif" alt=""></p>
+<h3 id="5-instruction-page">5. Instruction Page</h3>
+<p><img src="/GPS2/Instruction.gif" alt=""></p>
+<h2 id="the-challenges-and-solutions">The Challenges and Solutions</h2>
+<h3 id="1-hexagon-generator-1">1. Hexagon Generator</h3>
+<p><img src="/GPS2/HexagonGeneratorScript.png" alt=""></p>
+<p>Platform procedure generator can be the most tricky parts that I handle in this project. Our level concept is proposed to be a procedure generator platform with a random enemy tower. Creating a procedure platform is not that hard. However, the tricky part is that in order to create a &ldquo;good shape&rdquo; of the platform like the above image, a complex formula will be needed to add inside the for loop function in order to determine the shape of the spawn location.</p>
+<p>Fortunately, a good YouTube reference of custom shape hex tile platform helped me a lot. Other than that, each of the hex tile positions will be needed to add into a List in order to achieve random tower and damage tile spawn.</p>
+<p>
+<div class="video-container"><style>body {text-align: center;}</style>
+    <iframe width="850" height="450" src="https://www.youtube.com/embed/rjBD-4gNcfA" frameborder="0" allowfullscreen></iframe>
+
+</div>
+
+
+
+Credit:  Hexagon Calculation Formula Reference from Aeonic Softworks</p>
+<h3 id="2-spell-cards-and-shop-system-1">2. Spell Cards and Shop System</h3>
+<h4 id="shop-system">Shop System</h4>
+<p><img src="/GPS2/shop1.png" alt="">
+The shop system is the second challenge I faced in this project. To ensure the item is randomized in a limited way(which means the player can get at least one robot unit and upgrade), a list of variables will be needed to determine the different types of shop items to spawn.
+<img src="/GPS2/shop2.png" alt="">
+The most tricky part of the shop system would be buyCard function. Shop system contains a lot of different type of item such as spell card, robot unit and upgrade. An epic perks buff could even increase the item amount to 2 each time the player bought it. Therefore, a lot of conditions will need to check in order to actually achieve the function of each type of item.</p>
+<h4 id="spell-card">Spell Card</h4>
+<p><img src="/GPS2/Spellcard1.png" alt=""></p>
+<p>In order to make the spell card function work(such as transforming the card from 2D screen to world space), ray tracing would be used to determine the object that collided.</p>
+<p><img src="/GPS2/Spellcard2.png" alt="">
+Except for the fireball function was spawned and moved to the target, the other spell cards such as poison, heal and increase atk speed will spawn a sphere of collision to damage or increase the specific target&rsquo;s hp</p>
+<h3 id="3-main-menu-camera-system">3. Main Menu Camera System</h3>
+<p><img src="/GPS2/CameraDragSolution.png" alt=""></p>
+<p>A boolean was used to determine whether the camera rotation should auto-play or not. Other than that, the camera angle was clamped between two values when it is auto rotate. A coroutine was also used to determine the cooldown after the player stopped dragging the camera.</p>
+<h3 id="4-perks-and-upgrades-1">4. Perks and Upgrades.</h3>
+<p><img src="/GPS2/PerkandUpgradeScript.png" alt=""></p>
+<p>A scripting API that Unity provides called PlayerPrefs is the key function that helps me get most of the upgrade and perks value to work easily.</p>
+<p><img src="/GPS2/PerkandUpgradeScript2.png" alt="">
+The mana instance cool down, hp regenerate and robot shield perks could stand as individual functions but they still use PlayerPrefs to determine whether those functions can activate or not.</p>
+<h3 id="5-instruction-page-1">5. Instruction Page</h3>
+<p><img src="/GPS2/Instruction2.png" alt=""></p>
+<p>Instruction pages use the boolean to control the left and right swiping. The content array will be used to store the page UI reference and determine which page the player is located on and for smooth movement when swiping left and right. Another boolean CanMove was used to prevent players from spamming the swiping movement.</p>
+
+     
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+<footer class="footer">
+  <div class="uk-container">
+
+    <div class="uk-grid-small uk-child-width-1-4@m uk-text-center uk-flex-center uk-margin-medium-bottom" uk-grid>
+      <div class="uk-margin-small-bottom">
+        <h5 class="uk-margin-small-bottom">Email</h5>
+        <a href="mailto:chongkangrui@gmail.com">chongkangrui@gmail.com</a>
+
+      
+
+
+    <div class="footer-copyright uk-text-center" style="padding-bottom: 1rem">
+      <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1.2em;
+  width: 1.2em;" alt="Creative Commons">
+      <img loading="lazy" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1.2em;
+  width: 1.2em;" alt="CC-BY">
+      2023
+      Chong Kang Rui
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+</html>

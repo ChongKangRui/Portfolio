@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio on ChongPortfolio</title>
+    <link>https://example.com/portfolio/</link>
+    <description>Recent content in Portfolio on ChongPortfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
+    <atom:link href="https://example.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chiyo</title>
+      <link>https://example.com/portfolio/cp_chiyo/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/cp_chiyo/</guid>
+      <description>Gameplay Screenshots My Contribution &amp;amp; Challenging 1. Interaction system I am one of the people who contributed to designing the basic interaction system when we needed to create it from scratch. The interaction system that I contributed included how players interact with the interactable object, zoom in on the interactable object and even place items on those interactable objects. The purpose of this system is to simplify everything and make the system easy to use and understand by other programmers.</description>
+    </item>
+    <item>
+      <title>CKR Game Engine</title>
+      <link>https://example.com/portfolio/pp_cge/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/pp_cge/</guid>
+      <description>This is some content</description>
+    </item>
+    <item>
+      <title>GodArena</title>
+      <link>https://example.com/portfolio/pp_godsarena/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/pp_godsarena/</guid>
+      <description>Gameplay Screenshots Showcase </description>
+    </item>
+    <item>
+      <title>NDA Project</title>
+      <link>https://example.com/portfolio/cp_ndcproject/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/cp_ndcproject/</guid>
+      <description>Gameplay Screenshots My Contribution &amp;amp; Challenging My contribution to this project was mainly the AI. I created two AI and some gameplay features.
+1. AI with a simple attack style The first AI was an uncomplicated AI with simple attack behaviour. However, considering the network replication system to synchronize sfx, animation and correct behaviour state, it can add some challenges to this AI creation.
+2. AI with 6 different weapon and complex behavior The second AI was a complex AI with a variety of behaviours.</description>
+    </item>
+    <item>
+      <title>Student Project: Game Engine</title>
+      <link>https://example.com/portfolio/sp_gameengine/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/sp_gameengine/</guid>
+      <description>Engine Showcase Highlighting In this project, I learned about the most basic concept of game engine structure and I also require to use it to create a simple game.
+1. Entity Component System This project have a simple Entity Component System where a gameobject class that was able to attach the component to it.
+2. Input System This project also have it own input system where it will convert all of the opengl keycode into input system own enum.</description>
+    </item>
+    <item>
+      <title>Student Project: MindWar</title>
+      <link>https://example.com/portfolio/sp_mindwar/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/sp_mindwar/</guid>
+      <description>Gameplay Screenshots Trailer Game Description Developed by StopFeeding Studios, Mind Wars is a strategy/auto-battler mobile game that takes major inspirations from auto-chess titles such as Teamfight Tactics and Dota Underlords.Set in the near-future, Players assume the role of the eponymous profession, healing illnesses both mental and physical by vanquishing evil viruses with their army of nanobots.
+My Contribution 1. Hexagon Generator 2. Spell Cards and Shop System 3. Main Menu Camera System(Draggable Camera) 4.</description>
+    </item>
+    <item>
+      <title>Student Project: OtherLife</title>
+      <link>https://example.com/portfolio/sp_otherlife/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/sp_otherlife/</guid>
+      <description>Gameplay Screenshots Trailer Game Description Developed by Infinity Studios, Other Life is a first-person exploration game where you play as an alien explorer, sent out to scour the stars in search of new life. After detecting a significant energy signature on a nearby planet, you and your trusty AI companion happen upon the remnants of an alien civilization, brought to ruin by an unknown catastrophe. Armed with unique light-based technology, explore and discover the truth behind this interstellar mystery.</description>
+    </item>
+    <item>
+      <title>Student Project: Rendering Engine</title>
+      <link>https://example.com/portfolio/sp_rendering/</link>
+      <pubDate>Fri, 19 Jun 2020 23:00:00 +0000</pubDate>
+      <guid>https://example.com/portfolio/sp_rendering/</guid>
+      <description>Rendering Showcase Overview Actual Explanation</description>
+    </item>
+  </channel>
+</rss>
