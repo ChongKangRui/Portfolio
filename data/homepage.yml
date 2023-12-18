@@ -1,0 +1,58 @@
+---
+banner:
+  title: Hi! I’m Chong
+social:
+  twitter: ""
+  linkedin: chong-kang-rui-b06282249
+  github: ChongKangRui
+  gitlab: ""
+  facebook: ""
+  instagram: ""
+  gmail: chongkangrui
+about:
+  enable: true
+  content: A game developer who specializes in programming coding
+  button:
+    btnText: Find out more
+    URL: "/about"
+skill:
+  enable: true
+  item:
+    - title: C++
+      logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png
+      description: Strong C++ skills, covering fundamentals to advanced concepts. Familiar in pointers, data structures & algorithms, and experienced in Object Oriented Programming and Agile methodologies.
+    - title: Unreal Engine
+      logo: https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png
+      description: Expert in Unreal Engine, adept in both Blueprint and C++ development. Specialized in AI Behavior Trees, AI Perception, and general gameplay mechanics creation for immersive gaming experiences.
+    - title: Unity Engine
+      logo: https://seeklogo.com/images/U/unity-logo-988A22E703-seeklogo.com.png
+      description: Experience with Unity Engine's fundamental systems, including visual scripting, animation state machines, component systems, and C# to develop gameplay mechanisms
+    - title: C#
+      logo: https://www.cdnlogo.com/logos/c/27/c.svg
+      description: Basic knowledge of C#. Mainly related to Unity Engine.
+experience:
+  enable: true
+  item:
+    - logo: "https://media.licdn.com/dms/image/D560BAQG0D4samvw_oQ/company-logo_200_200/0/1685232611958?e=2147483647&v=beta&t=TQQiBO2bxUrLxeq6qSa-jR4CG4J5Y3xqZ9vMj7TgqlI"
+      title: Intern
+      company: Nimbus Games Studio
+      duration: 6/2/2023 - 6/8/2023
+    - logo: "https://media.licdn.com/dms/image/D560BAQG0D4samvw_oQ/company-logo_200_200/0/1685232611958?e=2147483647&v=beta&t=TQQiBO2bxUrLxeq6qSa-jR4CG4J5Y3xqZ9vMj7TgqlI"
+      title: Contract
+      company: Nimbus Games Studio
+      duration: 6/8/2023 - 6/1/2024
+education:
+  enable: true
+  item:
+    - title: Bachelor Of Game Development(Honours)
+      year: 2019 - 2023
+      academy: UOW Malaysia KDU University College
+      image: "https://myeducation.my/wp-content/uploads/2021/05/UOW-001-01.jpg"
+leadership:
+  enable: false
+  item:
+    - logo: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793280/logos/logos_yl_qozav6.webp
+      title: Young Leader
+      company: The Scout Association
+      duration: September 2014 - July 2018
+
