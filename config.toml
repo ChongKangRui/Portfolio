@@ -32,7 +32,7 @@ googleAnalytics = ""
 
   [[menu.main]]
   name = "About"
-  URL = "asout"
+  URL = "about"
   weight=1
 
   [[menu.main]]
