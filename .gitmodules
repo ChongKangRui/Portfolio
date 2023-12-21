@@ -1,7 +1,1 @@
-[submodule "public"]
-	path = public
-	url = https://github.com/ChongKangRui/chongPortfolio.github.io.git
-	branch = main
-[submodule "theme/hugo-developer-portfolio"]
-	path = themes/hugo-developer-portfolio
-	url = https://github.com/ChongKangRui/hugo-developer-portfolio.git
+
