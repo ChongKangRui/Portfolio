@@ -1,2 +1,3 @@
 [submodule "themes/hugo-developer-portfolio"]
 	url = https://github.com/ChongKangRui/hugo-developer-portfolio.git
+	path = themes/hugo-developer-portfolio
