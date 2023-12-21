@@ -1,5 +1,5 @@
 # Base information
-baseURL = "https://examplesite.com"
+baseURL = "https://examplesite.com/Portfolio"
 languageCode = "en-gb"
 title = "ChongPortfolio"
 theme = "hugo-developer-portfolio"
