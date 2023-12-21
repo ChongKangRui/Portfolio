@@ -56,7 +56,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          BASE_URL="https://ckr.github.io/"
+          BASE_URL="https://chongkangrui.github.io/Portfolio/"
             hugo \
             --gc \
             --minify \
