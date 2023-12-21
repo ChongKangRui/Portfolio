@@ -56,7 +56,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          BASE_URL="https://${REPO_OWNER}.github.io/${REPO_NAME}/"
+          BASE_URL="https://${REPO_OWNER}.github.io/"
             hugo \
             --gc \
             --minify \
