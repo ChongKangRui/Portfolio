@@ -106,7 +106,8 @@ Eventually, this whole calculation will go into a loop timer. This loop timer wi
 
 For the AI, is basically using an enum character state to determine what behaviour they would do. The debuff will be prioritised to abort the other behaviour whenever they get stunned or laid on the ground. Other than that, most of the AI behaviour will just be handled by the action component.
 
+![](/Portfolio/GA/AIExecuteActionTask.png)
 ![](/Portfolio/GA/AIExecuteAction.png)
 
-One of the examples of how I tie the system with the AI. It will just execute a random action from the array.sssss
+One of the examples of how I tie the system with the AI. It will just execute an action from the action map. When the action is done executed, task will just ended.
 
