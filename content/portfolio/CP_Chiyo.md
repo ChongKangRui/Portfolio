@@ -14,7 +14,13 @@ url = "https://www.unrealengine.com/en-US/"
 +++
 ## Gameplay Screenshots
 
+{{< img2 "https://cdn.cloudflare.steamstatic.com/steam/apps/2220660/ss_de583b18f60b219f0655d39ba1f5c7baade31827.600x338.jpg?t=1701851250" "https://cdn.cloudflare.steamstatic.com/steam/apps/2220660/ss_ce5b7df240c93e8756fecbe0aa9469ac045bf324.116x65.jpg?t=1701851250">}}
+{{< img2 "https://cdn.cloudflare.steamstatic.com/steam/apps/2220660/ss_88c8f3e23bd7f96bbc42dd47de14e0ae896a27b9.600x338.jpg?t=1701851250" "https://cdn.cloudflare.steamstatic.com/steam/apps/2220660/ss_57de579dac5797f19e097a53add22fd42fea66d8.600x338.jpg?t=1701851250">}}
 
+
+## Gameplay Trailer
+
+{{< youtube "2KGlswJclmg" >}}
 
 
 ## My Contribution & Challenging
@@ -33,13 +39,17 @@ url = "https://www.unrealengine.com/en-US/"
 
 ### 3. Save system
 
-{{< LP "The save system is one of the most challenging parts that I handled in this project. The save system is responsible for saving and restoring the puzzle. For the saving part, it should save the door attribute (is open/unlock, cursed?), the pickable item that is stored inside the inventory, the journal that is already recorded, the puzzle state and so on. For the restore, it either has to restore everything including player position, pickables and etc or it only restores the puzzle state and spawns the player on the correct spawn point. During restoration for specific puzzles, it may also need to restore presave pickable items or trigger specific sequences." >}}
+{{< LP "The save system is one of the most challenging parts that I handled in this project. The save system is responsible for saving and restoring the puzzle. For the saving part, it should save the door attribute (is open/unlock, cursed?), the pickable item that is stored inside the inventory, the journal that is already recorded, the puzzle state and so on. For the restore, it either has to restore everything including pickables and door attribute or it only restores the puzzle state and spawns the player on the correct spawn point. During restoration for specific puzzles, it may also need to restore presave pickable items or trigger specific sequences." >}}
+
+{{< LP "The main logic behind the save system to restore and save multiple puzzles and player progress was to use interfaces and integers. A preset array for puzzle manager will be saved accordingly following the sequence of the puzzle. Integers will eventually be used to store the progress of the player. Once the integer meets the requirement of the puzzle (equal to or beyond the puzzle array index), it will call the interface to restore the puzzle." >}}
 
 {{< LP "Because the save system has been involved in a lot of things in this project, it must be careful and clear what can be triggered or what must be prevented from triggering at the start of the game. As a result, many factors must be considered during the creation of the save system, making it one of the more challenging parts of this project for me." >}}
 
 ### 4. Puzzle Time Travel
 
 {{< LP "Puzzle time travel is one of the puzzles in the game. Time travel will allow players to go to different seasons and collect different items by changing the clock's time. Therefore, a system will be responsible for changing seasons (like VFX), creating a seasonal event for related items, and deciding which time belongs to which season. An unordered map will be used to store the season and time, and a delegate will be used for related items to bind their season changing event." >}}
+
+{{< LP "To transform clock time based on angle, some calculations will need to be done. I am basically using the dot product and ACOS to get the angle of the clockhand. The dot product vector will be taken in the direction from the center point to the default point (which is 0) and from the center point to the end of the clockhand. To transform time based on angle, it need to use time divided by angle and use this value to multiply by the angle that we got previously." >}}
 
 {{< LP "Since the clock will also be responsible for controlling the skylight, directional light, and other related VFX. Thus, for optimization purposes, all of the VFX will only be activated when the player begins to solve the time travel puzzle." >}}
 

@@ -19,7 +19,7 @@ url = "https://www.glfw.org/"
 
 ## Engine Showcase
 
-{{< youtube "_4FArgOX1I4" >}}
+{{< youtube "mMfNs28PuOM" >}}
 
 ## Highlighting
 
@@ -27,25 +27,25 @@ In this project, I learned about the most basic concept of game engine structure
 
 ### 1. Entity Component System
 
-{{< img2 "/SGE/ECSSystem.png" "/SGE/GameObjectComponent.png" >}}
+{{< img2 "/Portfolio/SGE/ECSSystem.png" "/Portfolio/SGE/GameObjectComponent.png" >}}
 
 This project have a simple Entity Component System where a gameobject class that was able to attach the component to it.
 
 ### 2. Input System
 
-![](/SGE/InputSystem.png)
-![](/SGE/InputSystemEnum.png)
+![](/Portfolio/SGE/InputSystem.png)
+![](/Portfolio/SGE/InputSystemEnum.png)
 
 This project also have it own input system where it will convert all of the opengl keycode into input system own enum.
 
 ### 3. Level System
 
-{{< img "/SGE/LevelSystem.png" >}}
+![](/Portfolio/SGE/LevelSystem.png)
 
 A level system will be required as well. SceneManager will be responsible to manage all of the level and scene is responsible to manage all of the game object.
 
 ### 4. Transform and Sprite Renderer Component
 
-{{< img2 "/SGE/TransformC.png" "/SGE/SimpleSpriteRenderer.png" >}}
+{{< img2 "/Portfolio/SGE/TransformC.png" "/Portfolio/SGE/SimpleSpriteRenderer.png" >}}
 
 Lastly, a transform and sprite renderer component will be used to manage the object transform and render the sprite texture.

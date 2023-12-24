@@ -35,27 +35,27 @@ url = "https://www.unrealengine.com/en-US/"
 ## My Contribution 
 
 ### 1. Ai Companion
-![](/FYP/AI.png)
-{{< img2 "/FYP/AICompanionCollect.gif" "/FYP/DropBattery.gif">}}
+![](/Portfolio/FYP/AI.png)
+{{< img2 "/Portfolio/FYP/AICompanionCollect.gif" "/Portfolio/FYP/DropBattery.gif">}}
 
 collect and put in battery
 
-{{< img2 "/FYP/AIPickingUp.gif" "/FYP/AICompanionPut.gif">}}
+{{< img2 "/Portfolio/FYP/AIPickingUp.gif" "/Portfolio/FYP/AICompanionPut.gif">}}
 
 Picking Up and Dropping Down
 
 ### 2. Highlight and Scanning 
-{{< img2 "/FYP/highlighting.png" "/FYP/highlighting2.png">}}
+{{< img2 "/Portfolio/FYP/highlighting.png" "/Portfolio/FYP/highlighting2.png">}}
 
 Highligting
 
-![](/FYP/AIScaning.gif)
+![](/Portfolio/FYP/AIScaning.gif)
 
 Scanning
 
 ### 3. Dialogue and Cinematic Text Transformation
 
-{{< img2 "/FYP/AIDialogue.gif" "/FYP/CinematicTransformText.gif">}}
+{{< img2 "/Portfolio/FYP/AIDialogue.gif" "/Portfolio/FYP/CinematicTransformText.gif">}}
 
 Gif and content
 
@@ -63,32 +63,32 @@ Gif and content
 ### 1. Ai Companion
 
 #### AI Behavior Tree
-![](/FYP/Aibehaviortree.png)
+![](/Portfolio/FYP/Aibehaviortree.png)
 
 Except the behavior that used for final level, the behaviour enum will determine the ai behaviour. Based on the enum state, Ai companion will switch to different behaviour in order to help the player.
 
-![](/FYP/AIEnumState.png)
+![](/Portfolio/FYP/AIEnumState.png)
 
 Based on the player command, ai will switch the state according to the condition.
 
-{{< img2 "/FYP/EQS.png" "/FYP/teleport.png">}}
+{{< img2 "/Portfolio/FYP/EQS.png" "/Portfolio/FYP/teleport.png">}}
 
 Environment Query System was applied to not only the pathfinding but also the teleport system in order to get the most precise location and avoid getting stuck.
 
 #### Pick up and Drop down Item
 
-![](/FYP/pickupSolution.png)
+![](/Portfolio/FYP/pickupSolution.png)
 
 In order to really pick up the object without having any problem, collision, gravity and pathfinding need to be handled properly.
 
-![](/FYP/DropDown.png)
+![](/Portfolio/FYP/DropDown.png)
 
 When dropped, the item should enable nav mesh, collision and physic instead. 
 
 
 #### Collect and Put in battery
 
-![](/FYP/Spawnbattery.png)
+![](/Portfolio/FYP/Spawnbattery.png)
 
 For the battery and generator, basically it will be determined by whether the target had the interface or not. Of course before spawning the battery, it will check whether the inventory have enough number of battery or not
 
@@ -96,21 +96,21 @@ For the battery and generator, basically it will be determined by whether the ta
 
 #### Highlight outline
 
-![](/FYP/AngleFormula.png)
+![](/Portfolio/FYP/AngleFormula.png)
 
 The angle calculation will basically involve the dot product and acos2 to get the radians, then transform it to degrees. By getting the degrees, we will be able to know whether the object or which object is interactive or not based on the player angle.
 
-![](/FYP/HightilightingMaterial.png)
+![](/Portfolio/FYP/HightilightingMaterial.png)
 
 Highlighting can be one of the most tricky parts of this project. In order to properly highlight the mesh, the coordinate of the shape of the mesh will be needed and calculated. Fortunately, a tutorial resource from ParallelCube allowed us to handle the heavy calculation. 
 
-![](/FYP/stencil.png)
+![](/Portfolio/FYP/stencil.png)
 
 The object that gonna to be highlighted will be determine by their stencil integer.
 
 #### Scanning
 
-![](/FYP/Scannermaterial.png)
+![](/Portfolio/FYP/Scannermaterial.png)
 
 The scanning effect could be slightly less tricky compared with highlighting outlines. Basically, we just need to get the centre of the scanner and multiply the texture with a sphere mask. By increasing the radians dynamically in material blueprint, a scan effect will be created from the centre of scanner to the maximum amount of scan distance. 
 
@@ -118,13 +118,13 @@ The scanning effect could be slightly less tricky compared with highlighting out
 
 #### Dialogue
 
-![](/FYP/DialogueAnimated.png)
+![](/Portfolio/FYP/DialogueAnimated.png)
 
 The dialogue system basically uses an append to collect each character from the array inside a string and then display it one by one. 
 
 #### Cinematic Text Transformation
 
-![](/FYP/CTTA.png)
+![](/Portfolio/FYP/CTTA.png)
 
 Cinematic Text Transformation will use a different approach to achieve the effect compared with the dialogue system. In order to transform from one font to another, each character will be an individual widget. All widgets will be assigned as a child of a horizontal box. Inside each of the char widgets, the font will be changed after a specific delay.
 
