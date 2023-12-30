@@ -14,7 +14,7 @@ about:
   content: A game developer who specializes in programming coding
   button:
     btnText: Find out more
-    URL: "/about"
+    URL: "/Portfolio/about/"
 skill:
   enable: true
   item:
