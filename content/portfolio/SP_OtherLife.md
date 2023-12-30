@@ -21,10 +21,6 @@ url = "https://www.unrealengine.com/en-US/"
 {{< img2 "https://img.itch.zone/aW1hZ2UvMTY2NjY5Ni8xMDY2MjQwNi5wbmc=/347x500/hZ4gDq.png" "https://img.itch.zone/aW1hZ2UvMTY2NjY5Ni8xMDY2MjQwMi5wbmc=/347x500/kEwxAP.png">}}
 
 
-## Trailer
-
-{{< youtube "G3N2SD9Dokc" >}}
-
 ## Game Description
 
 {{<LP "Developed by Infinity Studios, Other Life is a first-person exploration game where you play as an alien explorer, sent out to scour the stars in search of new life.  After detecting a significant energy signature on a nearby planet, you and your trusty AI companion happen upon the remnants of an alien civilization, brought to ruin by an unknown catastrophe. Armed with unique light-based technology, explore and discover the truth behind this interstellar mystery.">}}
