@@ -26,7 +26,7 @@ url = "https://unity.com/how-to/learning-c-sharp-unity-beginners"
 
 ## Trailer
 
-{{< youtube "q6HVDigSZ48" >}}
+{{< youtube "dwFP2Q4EZmY" >}}
 
 ## Game Description
 
