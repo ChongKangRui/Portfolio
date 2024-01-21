@@ -23,7 +23,7 @@ skill:
       description: Strong C++ skills, covering fundamentals to advanced concepts. Familiar in pointers, data structures & algorithms, and experienced in Object Oriented Programming and Agile methodologies.
     - title: Unreal Engine
       logo: https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png
-      description: Expert in Unreal Engine, adept in both Blueprint and C++ development. Specialized in AI Behavior Trees, AI Perception, and general gameplay mechanics creation for immersive gaming experiences.
+      description: Expert in Unreal Engine, adept in both Blueprint and C++ development. Experience with AI, Replication Systems, Data Asset Creation, Enhanced Input Systems, Gameplay Ability Systems and General Gameplay Mechanic Creation.
     - title: Unity Engine
       logo: https://seeklogo.com/images/U/unity-logo-988A22E703-seeklogo.com.png
       description: Experience with Unity Engine's fundamental systems, including visual scripting, animation state machines, component systems, and C# to develop gameplay mechanisms
