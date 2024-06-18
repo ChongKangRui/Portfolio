@@ -11,7 +11,7 @@ social:
   gmail: chongkangrui
 about:
   enable: true
-  content: A game developer who specializes in programming coding
+  content: A game/software developer who specializes in programming coding
   button:
     btnText: Find out more
     URL: "/Portfolio/about/"
@@ -50,9 +50,9 @@ education:
       image: "https://myeducation.my/wp-content/uploads/2021/05/UOW-001-01.jpg"
 leadership:
   enable: false
-  item:
-    - logo: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793280/logos/logos_yl_qozav6.webp
-      title: Young Leader
-      company: The Scout Association
-      duration: September 2014 - July 2018
+#  item:
+#    - logo: https://res.cloudinary.com/samrobbins/image/upload/f_auto,q_auto/v1591793280/logos/logos_yl_qozav6.webp
+#      title: Young Leader
+#      company: The Scout Association
+#      duration: September 2014 - July 2018
 
