@@ -5,7 +5,7 @@ date = 2020-06-19T23:00:00Z
 description = "An RPG Souls-Like Game created by Unreal Engine"
 github = ["https://github.com/ChongKangRui/GodArena"]
 image = "/Portfolio/GA/GATitle2.png"
-title = "GodArena"
+title = "Personal Project: GodArena"
 type = "post"
 [[tech]]
 logo = "https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png"

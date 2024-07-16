@@ -5,7 +5,7 @@ date = 2020-06-19T23:00:00Z
 description = "A first-person escape room horror game set in Japan's Edo era."
 steam = "https://store.steampowered.com/app/2220660/Chiyo/"
 image = "https://cdn.akamai.steamstatic.com/steam/apps/2220660/capsule_616x353.jpg?t=1700451759"
-title = "Chiyo"
+title = "Commercial Project: Chiyo"
 type = "post"
 [[tech]]
 logo = "https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png"

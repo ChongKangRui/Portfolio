@@ -4,7 +4,7 @@ coders = []
 date = 2020-06-19T23:00:00Z
 description = "A third-person multiplayer shooter game created by using Unreal Engine"
 image = "https://www.indiafilings.com/learn/wp-content/uploads/2018/03/Non-Disclosure-Agreement-Template.jpg"
-title = "NDA Project"
+title = "Commercial Project: NDA Project"
 type = "post"
 [[tech]]
 logo = "https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png"
