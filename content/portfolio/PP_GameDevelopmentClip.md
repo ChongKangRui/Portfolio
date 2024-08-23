@@ -16,7 +16,7 @@ name = "C++"
 url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 +++
 
-# Project 01: Project Zomboid Like Project 
+# Project 01: Zomboid Like Project 
 ### UE Version: 5.3 | Completed Duration: 11 days
 
 {{< youtube "UYB5wX7okp8" >}}
