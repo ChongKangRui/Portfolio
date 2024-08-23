@@ -1,7 +1,6 @@
 +++
 categories = ["pp-dev"]
 coders = []
-date = 2020-06-19T23:00:00Z
 description = "An RPG Souls-Like Game created by Unreal Engine"
 github = ["https://github.com/ChongKangRui/GodArena"]
 image = "/Portfolio/GA/GATitle2.png"

@@ -1,7 +1,6 @@
 +++
 categories = ["sp-dev"]
 coders = []
-date = 2020-06-19T23:00:00Z
 description = "A second-year project that we completed over a three-month period."
 description2 = "9 Persons Group Project"
 itch = "https://uowmgames.itch.io/mind-wars"

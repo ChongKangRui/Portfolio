@@ -1,7 +1,6 @@
 +++
 categories = ["sp-dev"]
 coders = []
-date = 2020-06-19T23:00:00Z
 description = "A final-year project that we completed over a six-month period."
 description2 = "8 Persons Group Project"
 itch = "https://uowmgames.itch.io/other-life"

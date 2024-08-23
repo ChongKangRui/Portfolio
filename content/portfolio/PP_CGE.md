@@ -1,7 +1,6 @@
 +++
 categories = ["pp-dev"]
 coders = []
-date = 2020-06-19T23:00:00Z
 description = "A Game Engine that serve as a learning and fun project"
 github = ["https://github.com/ChongKangRui/CGE"]
 image = "https://st4.depositphotos.com/27269280/29686/v/450/depositphotos_296865646-stock-illustration-game-engine-logo-game-logo.jpg"

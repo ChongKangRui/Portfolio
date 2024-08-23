@@ -1,7 +1,6 @@
 +++
 categories = ["cp-dev"]
 coders = []
-date = 2020-06-19T23:00:00Z
 description = "A first-person escape room horror game set in Japan's Edo era."
 steam = "https://store.steampowered.com/app/2220660/Chiyo/"
 image = "https://cdn.akamai.steamstatic.com/steam/apps/2220660/capsule_616x353.jpg?t=1700451759"
