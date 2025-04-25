@@ -17,17 +17,17 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 +++
 
 # Project 01: Zomboid Like Project 
-### UE Version: 5.3 | Completed Duration: 11 days
+### UE Version: 5.3 
 
 {{< youtube "UYB5wX7okp8" >}}
 
 # Project 02: Third Person Shooter Game
-### UE Version: 5.4.2 Release (Source Engine) | Completed Duration: 6 days
+### UE Version: 5.4.2 Release (Source Engine) 
 
 {{< youtube "50_xtZYME-s" >}}
 
 # Project 03: PCG Learning Showcase
-### UE Version: 5.4.2 | Completed Duration: 5 days
+### UE Version: 5.4.2
 
 {{< youtube "iWrXbk9xrhQ" >}}
 

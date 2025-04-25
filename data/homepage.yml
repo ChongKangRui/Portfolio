@@ -33,14 +33,22 @@ skill:
 experience:
   enable: true
   item:
-    - logo: "https://media.licdn.com/dms/image/D560BAQG0D4samvw_oQ/company-logo_200_200/0/1685232611958?e=2147483647&v=beta&t=TQQiBO2bxUrLxeq6qSa-jR4CG4J5Y3xqZ9vMj7TgqlI"
-      title: Intern
+    - logo: "asset/NimbusStudioGameLogo.jpg"
+      title: Game Programmer Intern
       company: Nimbus Games Studio
       duration: 6/2/2023 - 6/8/2023
-    - logo: "https://media.licdn.com/dms/image/D560BAQG0D4samvw_oQ/company-logo_200_200/0/1685232611958?e=2147483647&v=beta&t=TQQiBO2bxUrLxeq6qSa-jR4CG4J5Y3xqZ9vMj7TgqlI"
-      title: Contract
+    - logo: "asset/NimbusStudioGameLogo.jpg"
+      title: Game Programmer
       company: Nimbus Games Studio
       duration: 6/8/2023 - 6/1/2024
+    - logo: "asset/FreelancerImage.png"
+      title: Game Programmer
+      company: Freelancer
+      duration: 1/5/2024 - 31/8/2024
+    - logo : "asset/InsenseStudioLogo.png"
+      title: VR Game Programmer
+      company: Insense studios
+      duration: 15/9/2024 - 15/9/2025
 education:
   enable: true
   item:
