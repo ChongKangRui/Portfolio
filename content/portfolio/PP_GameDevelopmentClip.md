@@ -1,6 +1,7 @@
 +++
 categories = ["pp-dev"]
 coders = []
+date = 2024-06-04
 description = "Unreal Engine Project Clips: Quick Exercises/Learning Showcase"
 # github = ["https://github.com/ChongKangRui/GodArena"]
 image = "https://cdn.vectorstock.com/i/500p/54/05/game-joystick-or-device-controller-logo-vector-10095405.jpg"
@@ -30,4 +31,3 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 ### UE Version: 5.4.2
 
 {{< youtube "iWrXbk9xrhQ" >}}
-

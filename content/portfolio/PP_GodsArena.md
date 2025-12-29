@@ -1,6 +1,7 @@
 +++
 categories = ["pp-dev"]
 coders = []
+date = 2023-05-03
 description = "An RPG Souls-Like Game created by Unreal Engine"
 github = ["https://github.com/ChongKangRui/GodArena"]
 image = "/Portfolio/GA/GATitle2.png"
@@ -57,7 +58,7 @@ In the action base class, I also create a custom SetTimer event to serve as simp
 
 {{< img2 "/Portfolio/GA/characterDataTable.png" "/Portfolio/GA/Character_DatatableInitialization.png">}}
 
-All of the actions will be initialized at the BeginPlay based on our character type (player type and enemy type). The action initialization will be based on the map that we set in the datatable with the specific character type enum. 
+All of the actions will be initialized at the BeginPlay based on our character type (player type and enemy type). The action initialization will be based on the map that user set in the datatable with the specific character type enum. 
 
 {{< img2 "/Portfolio/GA/ExecuteAction.png" "/Portfolio/GA/TerminateAction.png">}}
 
@@ -75,7 +76,7 @@ The attribute component will basically be responsible for some of the most impor
 
 ![](/Portfolio/GA/ApplyDamage.png)
 
-Since the attribute component is managed health and stamina, it will also have a common function that applies the damage to the character that will be deducted to either health or stamina. This function will also be responsible for spawning blood vfx, applying an impulse to the character when they are being attacked. The actual function of applying damage was created in a functional library blueprint as a static function. Therefore, we don't need to take into account casting or getting component references whenever we try to apply damage to certain characters.
+Since the attribute component is managed health and stamina, it will also have a common function that applies the damage to the character that will be deducted to either health or stamina. This function will also be responsible for spawning blood vfx, applying an impulse to the character when they are being attacked. The actual function of applying damage was created in a functional library blueprint as a static function. Therefore, program don't need to take into account casting or getting component references whenever program try to apply damage to certain characters.
 
 ![](/Portfolio/GA/AttributeDelegate.png)
 

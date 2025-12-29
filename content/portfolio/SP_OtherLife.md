@@ -1,6 +1,7 @@
 +++
 categories = ["sp-dev"]
 coders = []
+date = 2022-12-05
 description = "A final-year project that we completed over a six-month period."
 description2 = "8 Persons Group Project"
 itch = "https://uowmgames.itch.io/other-life"
@@ -96,7 +97,7 @@ For the battery and generator, basically it will be determined by whether the ta
 
 ![](/Portfolio/FYP/AngleFormula.png)
 
-The angle calculation will basically involve the dot product and acos2 to get the radians, then transform it to degrees. By getting the degrees, we will be able to know whether the object or which object is interactive or not based on the player angle.
+The angle calculation will basically involve the dot product and acos2 to get the radians, then transform it to degrees. By getting the degrees, program will be able to know whether the object or which object is interactive or not based on the player angle.
 
 ![](/Portfolio/FYP/HightilightingMaterial.png)
 
@@ -110,7 +111,7 @@ The object that gonna to be highlighted will be determine by their stencil integ
 
 ![](/Portfolio/FYP/Scannermaterial.png)
 
-The scanning effect could be slightly less tricky compared with highlighting outlines. Basically, we just need to get the centre of the scanner and multiply the texture with a sphere mask. By increasing the radians dynamically in material blueprint, a scan effect will be created from the centre of scanner to the maximum amount of scan distance. 
+The scanning effect could be slightly less tricky compared with highlighting outlines. Basically, program just need to get the centre of the scanner and multiply the texture with a sphere mask. By increasing the radians dynamically in material blueprint, a scan effect will be created from the centre of scanner to the maximum amount of scan distance. 
 
 ### 3. Dialogue and Cinematic Text Transformation
 

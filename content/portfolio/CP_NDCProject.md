@@ -1,8 +1,9 @@
 +++
 categories = ["cp-dev"]
 coders = []
+date = 2023-05-04
 description = "A third-person multiplayer shooter game created by using Unreal Engine"
-image = "https://www.indiafilings.com/learn/wp-content/uploads/2018/03/Non-Disclosure-Agreement-Template.jpg"
+image = "/Portfolio/MouthzipIcon.png"
 title = "Commercial Project: NDA Project"
 type = "post"
 [[tech]]
