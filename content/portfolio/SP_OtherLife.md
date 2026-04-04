@@ -9,7 +9,7 @@ image = "https://img.itch.zone/aW1nLzEwNjY0MDgwLnBuZw==/315x250%23c/ag3Ydf.png"
 title = "Student Project: OtherLife"
 type = "post"
 [[tech]]
-logo = "https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png"
+logo = "/Portfolio/asset/UnrealLogo.png"
 name = "Unreal"
 url = "https://www.unrealengine.com/en-US/"
 +++

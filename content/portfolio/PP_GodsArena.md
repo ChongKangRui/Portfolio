@@ -8,11 +8,11 @@ image = "/Portfolio/GA/GATitle2.png"
 title = "Personal Project: GodArena"
 type = "post"
 [[tech]]
-logo = "https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png"
+logo = "/Portfolio/asset/UnrealLogo.png"
 name = "Unreal"
 url = "https://www.unrealengine.com/en-US/"
 [[tech]]
-logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+logo = "/Portfolio/asset/c++Logo.png"
 name = "C++"
 url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 +++

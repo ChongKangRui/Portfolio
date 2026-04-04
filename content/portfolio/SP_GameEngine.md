@@ -8,7 +8,7 @@ image = "https://st4.depositphotos.com/27269280/29686/v/450/depositphotos_296865
 title = "Student Project: Game Engine"
 type = "post"
 [[tech]]
-logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+logo = "/Portfolio/asset/c++Logo.png"
 name = "C++"
 url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 [[tech]]

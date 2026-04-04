@@ -8,7 +8,7 @@ image = "https://cdn.akamai.steamstatic.com/steam/apps/2220660/capsule_616x353.j
 title = "Commercial Project: Chiyo"
 type = "post"
 [[tech]]
-logo = "https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png"
+logo = "/Portfolio/asset/UnrealLogo.png"
 name = "Unreal"
 url = "https://www.unrealengine.com/en-US/"
 +++
