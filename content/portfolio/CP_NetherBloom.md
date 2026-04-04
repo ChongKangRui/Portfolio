@@ -18,7 +18,7 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 ## VR Gameplay Demonstration
 
-{{< youtube "rQdojWyPCv0" >}}
+{{< youtube "9A6OSjdRqsw" >}}
 
 
 ## My Contribution & Challenging
@@ -35,44 +35,47 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 ![](/Portfolio/NB/LevelDesignConcept_2.png)
 
-
-
-{{< LP "Here is the concept of the generation. Level design defines a set of rules that will apply to the level generation. The generation will create areas following a fixed sequence. All generation will use seed, giving the designer a way to control the outcome. The generation algorithm will detect spawn conditions based on collision detection. To prevent dead ends before level generation is complete, each door within an area will have 3 chances to spawn, allowing the generation to step back. If stepping back happens 3 times, the entire generation will restart. ">}}
+{{< LP "A rule-based 3D procedural level generator that creates areas in a fixed sequence with designer-controllable seeds. Uses collision detection and dead-end validation for spawn conditions. Each door receives up to 3 spawn attempts to prevent premature dead ends. Generation restarts entirely after 3 backtracks.">}}
 
 ![](/Portfolio/NB/PCGshowcase.png)
 
-{{< LP " Each connection between areas is defined by a connection point placed in the level instance. These points are tied together and overlapped to connect rooms. Each connection point acts as a 'door' and the designer can assign it as a start door (connects to the previous room), an end door (selected as the next entry during generation), or a special door (connects to a dedicated special room).">}}
+{{< LP "Each area connection uses a connection point placed within the level instance. These points are tied together and overlapped to link rooms. Each connection point acts as a door, which the designer can assign as a start door (connects to the previous room), an end door (selected as the next entry during generation), or a special door (connects to a dedicated special room).">}}
 
 #### Enemy Spawn Distribution
 
 ![](/Portfolio/NB/EnemyWeightDistribution.png)
 
-{{< LP "After generation is complete, enemies are distributed to each area according to the enemy spawn points in that area. The designer can assign a spawn weight to each enemy at each spawn point. This weight directly affects enemy distribution—the higher the weight, the more spawn score that enemy consumes.">}}
+{{< LP "After level generation completes, enemies are distributed to each area based on enemy spawn points. Designers can assign a spawn weight to each enemy per spawn point. Higher weights increase the spawn score that enemy consumes.">}}
 
-{{< LP "Spawn score directly affects how many enemies spawn in the level. Stronger enemies have a higher spawn score, so they appear less often, while weaker enemies have a lower spawn score and appear more frequently.">}}
-
-
+{{< LP "Spawn score determines the total number of enemies in the level. Stronger enemies have higher spawn costs, making them appear less frequently, while weaker enemies have lower costs and appear more often.">}}
 
 ### 2. Gameplay
+
+#### Item Interactable system
+
+{{< LP "Implemented an item interactable system for VR gameplay. Every item, including guns, supports pickup and drop. Each item class uses polymorphism to enable flexible, overridable behaviors for pickup, drop, and use.">}}
 
 #### Gun Shooting On VR
 
 ![](/Portfolio/NB/Shoot.png)
 
-{{< LP "Our shooting mechanic works slightly differently in terms of logic. First, each gun can toggle between line trace and physical bullets. However, our physical bullets all use hierarchical instanced static meshes (HISM) to optimize performance instead of using the projectile component. A Bullet Pool Manager generates a fixed number of bullet instances and weapons can invoke an instance of a bullet. The bullet's movement, homing and arc-curve behavior are all handled by our custom logic.">}}
+{{< LP "Our shooting mechanic differs from standard implementations. Each gun can toggle between line tracing and physical bullets. Physical bullets use Hierarchical Instanced Static Meshes (HISM) for pooling instancing instead of Unreal's projectile component, optimizing performance. A Bullet Pool Manager generates a fixed number of bullet instances, which weapons invoke on demand. Bullet movement, homing behavior and arc trajectories are all handled by custom logic.">}}
 
 #### Gesture Skill
 
 ![](/Portfolio/NB/SkillRadialTrace.png)
 
-{{< LP "Gesture skills are part of the game mechanic. The player can cast skills based on different hand gesture motions. I primarily contributed the skill effects (buffs and debuffs) that apply to each enemy and the player. These skill effects can include damage over time, speed deduction/increase, damage increase, stun, pushback, stealth and more.">}}
+{{< LP "Gesture skills are a core game mechanic where players cast abilities based on hand gesture motions. I primarily contributed the skill effects — buffs and debuffs applied to enemies and the player. These effects include damage over time, speed modification, damage amplification, stun, pushback, stealth and more.">}}
 
 #### Climb
 
 {{< youtube "8VfQVsAwmSE" >}}
 
-{{< LP "The climb mechanic is one of the most interesting mechanics for level design, particularly in VR. The player must use the controller to grab a grab point and move their physical hand in order to move the character's body in the game.">}}
+{{< LP "The climb mechanic enables unique VR level design opportunities. Players must physically grab grab points with the controller and move their real-world hand to translate that motion into in-game character movement.">}}
 
+#### Dash
+
+{{< LP "Players can dash on ground or in the air. An air dash applies a gravity trajectory effect that influences falling behavior after the dash completes. A ground dash grants a temporary speed increase buff for a few seconds.">}}
 
 ### 3. AI
 
@@ -80,16 +83,20 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 ![](/Portfolio/NB/RunnerEnemy.png)
 
-{{< LP "I was in charge of one of the melee enemies in the game, called the Runner. The Runner has a lunge attack and a jump launch attack. Spots attached to the enemy can be shot by the gun. A red spot results in critical damage to the enemy, while a blue dot spawns a sub-enemy from the Runner.">}}
+{{< LP "I owned the implementation of the Runner, a melee enemy featuring lunge attack, leap attack and melee attack. The Runner has destructible spots that respond to gunfire: red spots deal critical damage, while blue spots spawn a sub-enemy upon being shot.">}}
 
 #### Spitter AI
 
 ![](/Portfolio/NB/SpitterEnemy.png)
 
-{{< LP "I was also in charge of one of the ranged enemies, called the Spitter. The Spitter has 3 aggressive attacks. It can shoot a projectile that tracks the target, shoot a split projectile, or shoot an arc-curve based projectile. Each projectile have a chance applies a thorn debuff(slowdown, damage over time etc) to the player when hit.">}}
+{{< LP "I was also incharge for the Spitter, a ranged enemy with three aggressive attacks: a homing projectile, a split projectile and an arc-based projectile. Each hit has a chance to apply a thorn debuff (slowdown + damage over time) to the player.">}}
 
-{{< LP "The Spitter also has 3 defensive behaviors when the player gets too close. When the player gets too close, the Spitter will either spawn an explosive miner or push the player backward before running away. If all defensive skills are on cooldown, it will simply run away from the player without doing anything. The standing location of the Spitter is determined by the EQS to ensure its projectiles are always reachable toward the player.">}}
+{{< LP "The Spitter also has four defensive behaviors triggered when the player gets too close: spawn an explosive miner, push the player backward before retreating, spawn an area that does damage over time to target or simply run away if all defensive skills are on cooldown. Its standing position is determined by EQS to ensure projectiles can always reach the player.">}}
 
+
+#### Enemy Manager
+
+{{< LP "Designed an Enemy Manager that controls all AI behavior, determining whether enemies are aggressive or passive. The manager dynamically swaps AI states in real time, limits how many enemies can attack the player simultaneously and prevents the same AI from attacking repeatedly from start to finish. It also dictates which enemies engage the player based on distance.">}}
 
 ### 4. Porting Of PC
 

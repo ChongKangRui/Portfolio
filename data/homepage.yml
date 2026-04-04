@@ -20,10 +20,10 @@ skill:
   item:
     - title: C++
       logo: /Portfolio/c++Logo.png
-      description: Strong C++ skills, covering fundamentals to advanced concepts. Familiar in pointers, data structures & algorithms, and experienced in Object Oriented Programming and Agile methodologies.
+      description: Strong C++ skills, covering fundamentals to advanced concepts. Familiar in pointers, data structures & algorithms and experienced in Object Oriented Programming and Agile methodologies.
     - title: Unreal Engine
       logo: /Portfolio/unrealIcon.png
-      description: Expert in Unreal Engine, adept in both Blueprint and C++ development. Experience with AI, Replication Systems, Data Asset Creation, Enhanced Input Systems, Gameplay Ability Systems and General Gameplay Mechanic Creation.
+      description: Expert in Unreal Engine, proficient in both Blueprint and C++. Deep experience with AI behavior, replication systems, data asset creation, Enhanced Input, Gameplay Ability System (GAS) and general gameplay mechanics. Additional expertise in VR development, algorithm implementation and procedural level generation systems.
     - title: Unity Engine
       logo: /Portfolio/unityIcon.png
       description: Experience with Unity Engine's fundamental systems, including visual scripting, animation state machines, component systems, and C# to develop gameplay mechanisms
