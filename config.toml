@@ -5,6 +5,12 @@ title = "ChongPortfolio"
 theme = "hugo-developer-portfolio"
 googleAnalytics = ""
 
+# Add this section HERE - after title/theme, before params
+[imaging]
+  quality = 75
+  resampleFilter = "Box"  # Only "Box", "Linear", "MitchellNetravali", "CatmullRom", "Lanczos"
+  anchor = "Smart"        # Only "Center", "Smart", "TopLeft", "Top", etc.
+
 # Remove this when using normally
 #themesDir = "../" 
 #theme = "."
