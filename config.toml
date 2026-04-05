@@ -18,6 +18,13 @@ googleAnalytics = ""
 #[module]
   #[[module.imports]]
     #path = "github.com/ChongKangRui/hugo-developer-portfolio"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+
+  [[module.mounts]]
+    source = "static"
+    target = "assets/static"
 
 # Plugins
 [params.plugins]
