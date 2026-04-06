@@ -45,9 +45,9 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 ![](/Portfolio/NB/EnemyWeightDistribution.png)
 
-{{< LP "After level generation completes, enemies are distributed to each area based on enemy spawn points. Designers can assign a spawn weight to each enemy per spawn point. Higher weights increase the spawn score that enemy consumes.">}}
+{{< LP "After level generation finishes, enemies get distributed to each area based on spawn points. Designers can assign a spawn weight to each enemy per spawn point. A higher weight increases how much spawn score that enemy consumes. I applied a Gaussian distribution to the enemy assignment process.">}}
 
-{{< LP "Spawn score determines the total number of enemies in the level. Stronger enemies have higher spawn costs, making them appear less frequently, while weaker enemies have lower costs and appear more often.">}}
+{{< LP "Each generated area has a total enemy spawn count, which increases with the area's level. Stronger enemies cost more to spawn, so they show up less often. Weaker enemies cost less and appear more frequently.">}}
 
 ### 2. Gameplay
 
