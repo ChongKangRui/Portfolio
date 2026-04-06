@@ -63,7 +63,7 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 #### Gesture Skill
 
-![](/Portfolio/NB/SkillRadialTrace.png)
+{{< youtube "IM2V8VYFgww" >}}
 
 {{< LP "Gesture based skills are part of the core gameplay mechanics, where players cast abilities based on hand movement. I primarily contributed to the skill effects - buffs and debuffs applied to the enemies and to the player. These effects include damage over time, speed modification, damage amplification, stun, pushback, stealth and more.">}}
 
