@@ -2,7 +2,7 @@
 categories = ["cp-dev"]
 coders = []
 date = 2026-03-31
-description = "A VR and PC shooter project that created by Unreal Engine"
+description = "VR/PC roguelite shooter developed in Unreal Engine 5.4"
 image = "/Portfolio/NB/Logo.png"
 title = "Commercial VR Project: NetherBloom"
 type = "post"
@@ -55,7 +55,7 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 {{< LP "Implemented an item interactable system for VR gameplay. Every item, including guns, supports pickup and drop. Each item class uses polymorphism to enable flexible, overridable behaviors for pickup, drop, and use.">}}
 
-#### Gun Shooting On VR
+#### Shooting In VR
 
 ![](/Portfolio/NB/Shoot.png)
 
@@ -65,13 +65,13 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 ![](/Portfolio/NB/SkillRadialTrace.png)
 
-{{< LP "Gesture skills are a core game mechanic where players cast abilities based on hand gesture motions. I primarily contributed the skill effects — buffs and debuffs applied to enemies and the player. These effects include damage over time, speed modification, damage amplification, stun, pushback, stealth and more.">}}
+{{< LP "Gesture based skills are part of the core gameplay mechanics, where players cast abilities based on hand movement. I primarily contributed to the skill effects - buffs and debuffs applied to the enemies and to the player. These effects include damage over time, speed modification, damage amplification, stun, pushback, stealth and more.">}}
 
 #### Climb
 
 {{< youtube "8VfQVsAwmSE" >}}
 
-{{< LP "The climb mechanic enables unique VR level design opportunities. Players must physically grab grab points with the controller and move their real-world hand to translate that motion into in-game character movement.">}}
+{{< LP "The climb mechanic enables unique VR level design opportunities. Physical grab of special points translates to player character movement. PC version has been implemented as well.">}}
 
 #### Dash
 
@@ -89,16 +89,16 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 ![](/Portfolio/NB/SpitterEnemy.png)
 
-{{< LP "I was also incharge for the Spitter, a ranged enemy with three aggressive attacks: a homing projectile, a split projectile and an arc-based projectile. Each hit has a chance to apply a thorn debuff (slowdown + damage over time) to the player.">}}
+{{< LP "I was also in charge of the Spitter, a ranged enemy with three aggressive attacks: a homing projectile, a multidirectional scatter attack and an arc-based projectile. Each hit has a chance to apply a thorn debuff (slowdown + damage over time) to the player.">}}
 
-{{< LP "The Spitter also has four defensive behaviors triggered when the player gets too close: spawn an explosive miner, push the player backward before retreating, spawn an area that does damage over time to target or simply run away if all defensive skills are on cooldown. Its standing position is determined by EQS to ensure projectiles can always reach the player.">}}
+{{< LP "The Spitter has also four defensive behaviors triggered when the player gets too close: spawn an explosive mine, push the player backwards before retreating, spawn an area that does damage over time to target or simply run away if all defensive skills are on cooldown. Its standing position is determined by EQS to ensure projectiles can always reach the player.">}}
 
 
 #### Enemy Manager
 
 {{< LP "Designed an Enemy Manager that controls all AI behavior, determining whether enemies are aggressive or passive. The manager dynamically swaps AI states in real time, limits how many enemies can attack the player simultaneously and prevents the same AI from attacking repeatedly from start to finish. It also dictates which enemies engage the player based on distance.">}}
 
-### 4. Porting Of PC
+### 4. PC Port
 
 {{< youtube "5_VEJl9NQHg" >}}
 

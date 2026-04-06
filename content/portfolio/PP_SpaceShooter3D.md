@@ -2,7 +2,7 @@
 categories = ["pp-dev"]
 coders = []
 date = 2025-05-04
-description = "A Third Person Space Shooter Game created by Unreal Engine"
+description = "A Third Person Space Shooter Game created in Unreal Engine"
 github = ["https://github.com/ChongKangRui/SpaceShooter_3D"]
 image = "/Portfolio/SpaceShooter/icon.png"
 title = "Personal Project: Space Shooter 3D"

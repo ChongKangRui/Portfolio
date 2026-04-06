@@ -2,7 +2,7 @@
 categories = ["pp-dev"]
 coders = []
 date = 2023-05-03
-description = "An RPG Souls-Like Game created by Unreal Engine"
+description = "An RPG Souls-Like Game created in Unreal Engine"
 github = ["https://github.com/ChongKangRui/GodArena"]
 image = "/Portfolio/GA/GATitle2.png"
 title = "Personal Project: GodArena"
@@ -35,11 +35,11 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 ![](/Portfolio/GA/SystemDiagram.png)
 
-The whole action combat system can basically be split into three components: Action Component, Attribute Component and Targeting Component. The purpose of this system is to make it simple to use, easier to construct build-in C++ functions in the blueprint and fit the design purpose of this game.
+The whole action combat system breaks down into three components: Action, Attribute, and Targeting. I built this system to be simple to use, easy to call C++ functions from blueprints, and aligned with the game's design goals.
 
--Action component: Manage all action behaviour that applies to both AI and Player. Involve execute, terminate or abandon the action.
--Attribute component: Manage all attributes for a character such as health, stamina, hit reaction, blood spawn etc.
--Targeting component: Do all the calculations for smooth camera targeting move, switch target angle calculation, etc.
+-Action component: The Action Component manages all action behaviors for both AI and players. It handles executing, terminating, or canceling actions.
+-Attribute component: The Attribute Component manages character stats like health, stamina, hit reactions, and blood spawn effects.
+-Targeting component: The Targeting Component handles all the camera calculations, including smooth target following and angle calculations for switching between targets.
 
 ### 2. Action Component
 
@@ -47,26 +47,25 @@ The whole action combat system can basically be split into three components: Act
 
 ![](/Portfolio/GA/Action.png)
 
-Action is the core of the action component which represents action behavior. All of the interactions will be done in Action class.  Two functions in the base Action class are called OnActionBegin and OnActionEnd will be the implementation of action behavior. These two functions will called whenever the action begin and end trigger.
+Action is the core of the Action Component and represents the actual behavior. All interactions happen inside the Action class. Two key functions in the base Action class are OnActionBegin and OnActionEnd, which handle the implementation of the action behavior. These get called whenever an action starts or ends.
 
 ![](/Portfolio/GA/ActionTimer.png)
 
-
-In the action base class, I also create a custom SetTimer event to serve as simplification of the function from Unreal API.
+I also added a custom SetTimer event in the action base class to simplify the timer function from Unreal's API.
 
 #### Component
 
 {{< img2 "/Portfolio/GA/characterDataTable.png" "/Portfolio/GA/Character_DatatableInitialization.png">}}
 
-All of the actions will be initialized at the BeginPlay based on our character type (player type and enemy type). The action initialization will be based on the map that user set in the datatable with the specific character type enum. 
+All actions are initialized at BeginPlay based on character type (player or enemy). The initialization reads from a data table where the user assigns actions to each character type enum.
 
 {{< img2 "/Portfolio/GA/ExecuteAction.png" "/Portfolio/GA/TerminateAction.png">}}
 
-The action can be used to execute which begin the action and terminate at the end of the action. Those execute and terminate triggers will be set in the blueprint for the player. For AI, it will trigger as a task in the behaviour tree based on the AI state.
+Actions can be executed and terminated. For the player, these triggers are set up in blueprints. For AI, they fire as tasks inside the behavior tree based on the AI's current state.
 
 ![](/Portfolio/GA/ActionComponentDelegate.png)
 
-In the action component, the dynamic multicast delegate will also be provided for the flexibility of constructing functions quickly in the blueprint. Therefore, whenever an action is triggered or ends, it can always provide active action referencing for better flexibility. 
+I also added dynamic multicast delegates to the Action Component. This makes it easier to hook up functions quickly in blueprints. Whenever an action starts or ends, the system provides a reference to the active action, which gives more flexibility for other systems to respond. 
 
 ### 3. Attribute Component
 
@@ -80,34 +79,34 @@ Since the attribute component is managed health and stamina, it will also have a
 
 ![](/Portfolio/GA/AttributeDelegate.png)
 
-The same thing with the action component, the attribute component also provides some dynamic multicast delegate for a flexible and convenient development environment.
+Like the Action Component, the Attribute Component also provides dynamic multicast delegates for a more flexible and convenient development environment.
 
 ### 4. Targeting Component
 
 ![](/Portfolio/GA/TargetingComponentStruct.png)
 
-For the Targeting component, a struct will be provided to manage the mesh rotation since the player was allowed to dodge or roll.
+The Targeting Component uses a struct to manage mesh rotation, which was needed because the player can dodge or roll.
 
 ![](/Portfolio/GA/BeginTargetLogic.png)
 
-When the player is trying to target an enemy, a calculation will be done before the actual targeting logic happens in order to choose the enemy that is most eligible to be targeted.
+When the player tries to target an enemy, the system runs a calculation first to pick the most eligible enemy before the actual targeting logic kicks in.
 
 ![](/Portfolio/GA/TargetingTickLogic2.png)
 
-For the core logic of targeting camera rotation, I choose to calculate it step by step so that I can have more control over the whole calculation. 
+For the core camera rotation logic, I chose to calculate it step by step. This gave me more control over the entire process.
 
 ![](/Portfolio/GA/TargetingTickLogic.png)
 
-Eventually, this whole calculation will go into a loop timer. This loop timer will only be active when the player start locking the target.
+This entire calculation runs inside a loop timer. The timer only activates when the player starts locking onto a target.
 
 ### 5. AI
 
 ![](/Portfolio/GA/AIExample.png)
 
-For the AI, is basically using an enum character state to determine what behaviour they would do. The debuff will be prioritised to abort the other behaviour whenever they get stunned or laid on the ground. Other than that, most of the AI behaviour will just be handled by the action component.
+The AI uses an enum character state to determine behavior. Debuffs like stuns or getting knocked to the ground get priority and will abort other behaviors. Aside from that, most AI behavior is handled by the Action Component.
 
 ![](/Portfolio/GA/AIExecuteActionTask.png)
 ![](/Portfolio/GA/AIExecuteAction.png)
 
-One of the examples of how I tie the system with the AI. It will just execute an action from the action map. When the action is done executed, task will just ended.
+Here's an example of how I tied the system to the AI. The AI simply executes an action from the action map. Once the action finishes, the task ends.
 

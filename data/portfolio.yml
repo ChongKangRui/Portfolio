@@ -1,8 +1,8 @@
 filter:
-  - label: Personal Project
+  - label: Personal Projects
     value: pp-dev
-  - label: Commercial Project
+  - label: Commercial Projects
     value: cp-dev
-  - label: Student Project
+  - label: Student Projects
     value: sp-dev
 

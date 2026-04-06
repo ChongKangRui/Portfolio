@@ -2,7 +2,7 @@
 categories = ["pp-dev"]
 coders = []
 date = 2023-12-05
-description = "A Third Person Space Shooter Game created by Unreal Engine"
+description = "A Third Person Space Shooter Game created in Unreal Engine"
 github = ["https://github.com/ChongKangRui/ShootEachOther"]
 image = "/Portfolio/SEO/GSS/Icon.png"
 title = "Personal Project: ShootEachOther"
@@ -38,81 +38,75 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 ### 1. Gameplay Ability System
 
-
-The core logic of Gameplay Ability System was reference from Lyra project.
+The core logic was referenced from the Lyra project.
 
 #### Gameplay Ability Binding
 
-The core setup will require two struct. 
+The setup requires two structs.
 
 ![](/Portfolio/SEO/GAS/GAS_AbilityStructBinding.png)
 
-The first struct will be used to determine the ability granted to the Gameplay Ability System. Each weapon will grant or remove their ability when player swapping weapon. Same ability may contain different of ability level for different weapon as well.
+The first struct determines which abilities are granted to the Gameplay Ability System. Each weapon grants or removes its abilities when the player swaps weapons. The same ability can also have different levels depending on the weapon.
 
 ![](/Portfolio/SEO/GAS/GAS_AbilityInputBinding.png)
 
-The second struct will be used to bind Gameplay Tag into input action.
+The second struct binds Gameplay Tags to input actions.
 
 ![](/Portfolio/SEO/GAS/GAS_BindAbility.png)
 
-{{< LP "These two function will be the core function to bind the ability with Enhanced Input Component.">}}
-{{< LP "BindNativeAction will be used to bind the functionality that not belong to Gameplay Ability System such as Character and Camera Movement.">}} 
-{{< LP "BindAbilityActions will be used to bind the functionality(Gameplay Ability) that will grant to Gameplay Ability System. More detail will be explained in the next two session. ">}}
+{{< LP "These two functions are the core for binding abilities to the Enhanced Input Component.">}}
+{{< LP "BindNativeAction handles functionality outside the Gameplay Ability System, like character and camera movement.">}} 
+{{< LP "BindAbilityActions handles the actual Gameplay Abilities that will be granted to the system.">}}
 
 #### Gameplay Ability Input
 
 ![](/Portfolio/SEO/GAS/GAS_AbilityInput.png)
 
-{{< LP "These two function will be bound to the input action by using BindAbilityActions function. ">}}
+{{< LP "These two functions get bound to input actions using BindAbilityActions. ">}}
 
-{{< LP "Whenever player press any input button that was bound with GameplayTag, AbilityInputTagPressed will search the granted ability, add it into InputPressedSpecHandle and InputHeldSpecHandle. ">}}
+{{< LP "When the player presses an input button bound to a Gameplay Tag, AbilityInputTagPressed searches for the granted ability and adds it to InputPressedSpecHandle and InputHeldSpecHandle.">}}
 
-{{< LP "Whenever player release any input button that was bound with GameplayTag, AbilityInputTagReleased will search the granted ability, add it into InputReleasedSpecHandle and remove from InputHeldSpecHandle. AbilitySpecHandle will be removed from InputPressedSpecHandle during the gameplay ability execution as well.">}}
+{{< LP "When the player releases the button, AbilityInputTagReleased searches for the ability, adds it to InputReleasedSpecHandle, and removes it from InputHeldSpecHandle. The AbilitySpecHandle also gets removed from InputPressedSpecHandle when the ability executes.">}}
 
 
 #### Gameplay Ability Execute
 
 ![](/Portfolio/SEO/GAS/GAS_ProcessAbility_1.png)
 
-{{< LP "It is time to talk about the process of how the ability activate. The ability that held in InputPressedSpecHandle and InputHeldSpecHandle will being loop and added into the AbilityToActivate array.">}}
+{{< LP "Now for how the ability activates. Abilities held in InputPressedSpecHandle and InputHeldSpecHandle get looped through and added to an AbilityToActivate array.">}}
 
 ![](/Portfolio/SEO/GAS/GAS_ProcessAbility_2.png)
 
-{{< LP "A forloop will be used to activate all the ability. InputReleasedSpecHandle will only be triggered after all the valid ability activate.">}}
+{{< LP "A for loop then activates all the abilities. InputReleasedSpecHandle only triggers after all valid abilities have been activated.">}}
 
 #### Gameplay Ability Base
 
 ![](/Portfolio/SEO/GAS/GAS_BaseAbility.png)
 
-{{< LP "Gameplay Ability Base is the basic class of the Gameplay Ability. It contain the general function for derived ability classes to get the necessary reference.">}}
+{{< LP "The Gameplay Ability Base is the parent class for all gameplay abilities. It contains common functions for derived ability classes to grab necessary references.">}}
 
 ![](/Portfolio/SEO/GAS/GAS_ListAbility.png)
 
-Here is a list of Gameplay Ability that I created and applied in this project. Critical gameplay functionality was done and replicated inside these Gameplay Ability as well. For more detail functionality, feel free to check the Github link.
+Here is a list of the Gameplay Abilities I created for this project. Critical gameplay functionality and replication were handled inside these abilities. For more details, feel free to check the GitHub link.
 
 ### 2. Weapon
 
 ![](/Portfolio/SEO/Weapon/WeaponInventory.png)
 
-{{< LP "A WeaponInventoryComponent will be used to manage all the weapon related data. Each weapon will represent as an UObject called Weapon Instance. WeaponInventoryComponent will be responsible for switching between weapon as well. ">}}
+{{< LP "A WeaponInventoryComponent manages all weapon-related data. Each weapon is represented as a UObject called Weapon Instance. This component also handles switching between weapons.">}}
 
 ![](/Portfolio/SEO/Weapon/WeaponInventory_WeaponStruct.png)
 
-{{< LP "A struct that used to represent each weapon slot. There will be 4 weapon slots: ">}}
-
-{{<LP " Slot 1 - Main Weapon ">}}
-{{<LP " Slot 2 - Secondary Weapon ">}}
-{{<LP " Slot 3 - Melee Weapon ">}}
-{{<LP " Slot 4 - Throwable Weapon ">}} 
+{{< LP "A struct represents each weapon slot. There are four slots: Main Weapon, Secondary Weapon, Melee Weapon, and Throwable Weapon.">}}
 
 #### Weapon Instance
 ![](/Portfolio/SEO/Weapon/WeaponInstance.png)
 
-{{< LP "Weapon Instance is an UObject that used to store the weapon data, such as Max Ammo and Current Ammo. Ammo will store inside gameplay tag base container. Weapon Instance is also responsible to tell the Gameplay Ability system which weapon ability should granted. ">}}
+{{< LP "WWeapon Instance is a UObject that stores weapon data like max ammo and current ammo. Ammo is stored in a Gameplay Tag-based container. The Weapon Instance also tells the Gameplay Ability System which abilities should be granted for that weapon.">}}
 
 ![](/Portfolio/SEO/Weapon/WeaponInventory_ReplicateUOBject.png)
 
-{{< LP "In the weapon inventory, Weapon Instance will be replicated as well so each client can know the weapon data. ">}}
+{{< LP "Inside the weapon inventory, Weapon Instance gets replicated so each client knows the weapon data.">}}
 
 ![](/Portfolio/SEO/Weapon/ExampleUI01.png)
 ![](/Portfolio/SEO/Weapon/ExampleUI02.png)
@@ -121,16 +115,16 @@ Here are the example of how the Interface will be look like over the data table.
 
 ### 3. Match Rule System
 
-Now let talk about the match system and how it work.
+Now for the match system and how it works.
 
 ![](/Portfolio/SEO/GameMode/GameMode_AssignPlayerToTeam.png)
 
-{{< LP "Whenever a new player joins the host, Game Mode will assigne them to one of the teams based on whichever team has fewer players. They are also allow to switch between team and add new AI to their team.">}}
+{{< LP "Whenever a new player joins the host, the Game Mode assigns them to the team with fewer players. Players can also switch teams and add new AI to their team.">}}
 
 ![](/Portfolio/SEO/GameState/MatchSystem_AssignplayerTo.png)
 
-{{< LP "Game State will store all the team information and also responsible for the actual functionality of assign player into team.  ">}}
+{{< LP "The Game State stores all team information and handles the actual logic for assigning players to teams.">}}
 
 ![](/Portfolio/SEO/PlayerState_Attribute.png)
 
-{{< LP " It is worth to mention the Player State as well since it also storing important data of the player such as player name, their current money and player ID. ">}}
+{{< LP "It's also worth mentioning the Player State, which stores important player data like player name, current money, and player ID.">}}

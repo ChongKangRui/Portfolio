@@ -21,15 +21,15 @@ url = "https://www.unrealengine.com/en-US/"
 
 ## My Contribution & Challenging
 
-{{< LP "My contribution to this project was mainly the AI. I created two AI and some gameplay features.">}}
+{{< LP "My contribution to this project focused primarily on the AI systems. I implemented two AI agents, each with their own behaviors and decision-making logic. I also developed several supporting gameplay features that integrated directly with these AI systems to create a cohesive player experience.">}}
 
 ### 1. AI with a simple attack style
 
-{{< LP "The first AI was an uncomplicated AI with simple attack behaviour. However, considering the network replication system to synchronize sfx, animation and correct behaviour state, it can add some challenges to this AI creation.">}}
+{{< LP " The first AI was straightforward, with simple attack behavior. However, due to the network replication system used to synchronize SFX, animations, and behavior states, even this simple AI presented unique challenges during development.">}}
 
 ### 2. AI with 6 different weapon and complex behavior
 
-{{< LP "The second AI was a complex AI with a variety of behaviours. Consider this AI to have three ranged and three melee weapons, each with its own special attack behaviour, and this AI can even summon the first AI or heal itself on its own. This increases the difficulty of producing AI behaviour while considering the replication system. ">}}
+{{< LP "The second AI was far more complex, featuring a wide range of behaviors. It had access to three ranged weapons and three melee weapons, each with its own unique special attack. On top of that, this AI could summon the first AI or heal itself independently. Balancing all these behaviors while ensuring everything worked properly with the replication system significantly increased the difficulty of development. ">}}
 
 
 {{< LP "In terms of the behaviour tree module, I eventually made the AI start with a default behaviour tree module that contains investigate, patrolling, summon first AI and ranged weapon behaviour. However, when the AI belongs to the melee weapon behaviour, it will switch from the default behaviour tree to another behaviour tree module when It activates combat mode. Vice versa, when it is quit combat mode, the behaviour tree will switch back to default.">}}
@@ -39,8 +39,8 @@ url = "https://www.unrealengine.com/en-US/"
 ### 3. General Gameplay features
 #### Synchronization score between server and client 
 
-{{< LP "The score synchronization between the server and client will follow the same concept as the AI weapon spawn. All of the scores will be set on the server and replicated on the client side. The data synchronization has to be done in the player blueprint instead of the widget since the widget doesn't provide replication functionality. Each widget was a sole object for either the server or the client.">}}
+{{< LP "For score synchronization, I used the same approach as the AI weapon spawn. All scores are set on the server and then replicated to the client side. The tricky part was that I had to handle the data sync inside the player blueprint instead of the widget, since widgets don't support replication. Each widget exists only for the server or the client, never both.">}}
 
 #### Hand offset for the more precise holding gun position
 
-{{< LP "During this project, one of the problems that we encountered was that the holding gun animation and the gun were not matched correctly. The hand itself is not natural and precise in terms of holding a gun. Therefore, to make the hand IK more precise and natural, I have created the value for each character to modify the IK value in the left hand IK by modifying the bone transform directly. This value will be changeable in the data table as part of the character property.">}}
+{{< LP "During the project, we ran into an issue where the holding gun animation didn't match the gun model properly. The hand position looked unnatural and off. To fix this, I created adjustable values for each character to tweak the left hand IK by modifying the bone transform directly. These values are stored in a data table as part of each character's properties, making them easy to adjust per character.">}}
