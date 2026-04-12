@@ -41,6 +41,12 @@ url = "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
 {{< LP "Each area connection uses a connection point placed within the level instance. These points are tied together and overlapped to link rooms. Each connection point acts as a door, which the designer can assign as a start door (connects to the previous room), an end door (selected as the next entry during generation), or a special door (connects to a dedicated special room).">}}
 
+![](/Portfolio/NB/Lighting.png)
+
+{{< LP "One problem with procedural levels is lighting. We try to avoid using dynamic lighting because it increases draw calls, and VR devices have very limited resources for rendering. Therefore, we targeted a lightmap solution, where every light becomes part of the texture for an area. However, it’s not realistic to ask artists to draw lightmaps for every asset (we may have hundreds of area maps!). After research and testing, we discovered that we could bake the lightmap of a level instance and apply it to our procedural level.">}}
+
+{{< LP "By dragging every level instance that requires baking into a single persistent level, each level instance and persistent level generates their own lighting data. By renaming the generated lighting data with our play map level prefix, we can apply the lighting data to the main level. Every light is destroyed during the pre-initialized state, so all lighting is presented as baked lightmap textures in our game.">}}
+
 #### Enemy Spawn Distribution
 
 ![](/Portfolio/NB/EnemyWeightDistribution.png)
