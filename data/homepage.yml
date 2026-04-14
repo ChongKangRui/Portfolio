@@ -11,7 +11,7 @@ social:
   gmail: chongkangrui
 about:
   enable: true
-  content: Game Programmer specializing in Unreal Engine and Unity development. Proficient in software development principles for versatile applications.
+  content: Software Engineer specializing in Unreal Engine/C++ and Unity/C#. Proficient in software development principles for versatile applications.
   button:
     btnText: Find out more
     URL: "/Portfolio/about/"
@@ -20,7 +20,7 @@ skill:
   item:
     - title: C++
       logo: /Portfolio/c++Logo.png
-      description: Strong C++ skills, covering fundamentals to advanced concepts. Familiar in pointers, data structures & algorithms and experienced in Object Oriented Programming and Agile methodologies.
+      description: Strong C++ skills, covering fundamentals to advanced concepts. Familiar in pointers, data structures & algorithms, system design and experienced in Object Oriented Programming and Agile methodologies.
     - title: Unreal Engine
       logo: /Portfolio/unrealIcon.png
       description: Expert in Unreal Engine, proficient in both Blueprint and C++. Deep experience with AI behavior, replication systems, data asset creation, Enhanced Input, Gameplay Ability System (GAS) and general gameplay mechanics. Additional expertise in VR development, algorithm implementation and procedural level generation systems.
@@ -46,7 +46,7 @@ experience:
       company: Freelancer
       duration: 1/5/2024 - 31/8/2024
     - logo : "asset/InsenseStudioLogo.png"
-      title: VR Game Programmer
+      title: VR Programmer
       company: Insense Studios
       duration: 15/9/2024 - Present
 education:
